@@ -1,0 +1,20 @@
+.accordion {
+    .vc-card-header {
+        border-bottom: $borderBottomDark;
+        background-color: $colorCartHeader;
+        .btn-link {
+            @include vcCardHeaderBtn();
+            &:hover,
+            &:focus,
+            &active {
+                text-decoration: $txtNotUnderlined;
+            }
+            span {
+                font-size: 1.25rem;
+                @include phone {
+                    font-size: 1rem;
+                }
+            }          
+        }         
+    }
+}

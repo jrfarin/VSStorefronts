@@ -1,0 +1,41 @@
+$break-vc-sm:  767px;
+$break-vc-md: 768px;
+$break-vc-lg: 1024px;
+$break-vc-xl: 1200px;
+
+
+@mixin phone {
+    @media (max-width: #{$break-vc-sm}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$break-vc-md}) and (max-width: #{$break-vc-lg - 1 }) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$break-vc-lg }) and (max-width: #{$break-vc-xl }) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$break-vc-xl + 1}) {
+        @content;
+    }
+}
+
+@include phone {
+    .hide-phone {
+        display: none;
+    }
+}
+@include tablet {
+    .hide-tbl {
+        display: none;
+    }
+}
+

@@ -1,0 +1,33 @@
+// ===== HTML & Body ===== //
+*, body {
+    @include LH(1.25);
+    font-family: Roboto;
+    font-size: .9rem;
+    font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+// ===== Buttons ===== //
+button:focus {
+    outline: none;
+}
+
+// ===== Breadcrumbs ===== //
+.breadcrumb {
+    background: none;;
+}
+.breadcrumb-item.active {
+    color: #050606;
+}
+
+.glider-next, 
+.glider-prev {
+    @include phone {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+}

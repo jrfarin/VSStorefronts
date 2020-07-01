@@ -1,0 +1,44 @@
+// ===== Margins ===== //
+.mt-15 {
+    @include MTop(1.5rem)
+}
+.mt-20 {
+    @include MTop(2rem)
+}
+.mt-25 {
+    @include MTop(2.5rem)
+}
+.MX-2 {
+    @include Mx(2rem, 2rem)
+}
+
+
+@include phone {
+    .mt-phone-0 {
+        margin-top: 0 !important;
+    }
+    .my-phone-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+@include tablet {
+    .my-tablet-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .my-tablet-1 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .mt-tablet-0 {
+        margin-top: 0 !important;
+    }
+
+    .px-tablet-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

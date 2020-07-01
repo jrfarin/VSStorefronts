@@ -1,0 +1,37 @@
+// ===== Cursors ===== //
+.cPointer {
+    @include Cursor(pointer);
+}
+
+// ===== Colors ===== //
+.vc-color {
+    color: $colorVenca;
+}
+.vc-disabled {
+    color: $colorDisabled;
+}
+
+// ===== Displays ===== //
+.vc-hide {
+    display: none;
+}
+
+// ===== Sizing ===== //
+.vc-vw-height-100 {
+    @include vHeight(100vh);
+}
+.vc-height-45 {
+    @include vHeight(45px);
+}
+.vc-height-36 {
+    @include vHeight(36px);
+}
+
+// ===== Positioning ===== //
+.top-2 {
+    @include absTop(2%);
+}
+.right-2 {
+    @include absRight(2%);
+}
+

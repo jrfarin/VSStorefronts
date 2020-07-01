@@ -1,0 +1,29 @@
+.btn-scroll-top {
+    position: fixed;
+    bottom: 10vh;
+    right: 8vw;
+    z-index: 1045;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: $colorBgButton; 
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: $colorLink;
+        color: $colorBgButtonHover;
+    }
+}
+
+.btn-choose-color {
+    background-color: #fff;
+    padding: .25rem;
+    border: 1px solid #dedede;
+    &.selected {
+        border-color: $colorBgButton;
+    }
+}
+
+// ===== Generic Dark Button (login, add type... ===== //
+.vc-button {
+    @include vcButton();
+}

@@ -1,0 +1,117 @@
+// ===== VAR COLORS ===== //
+$colorLink : #606060;
+$colorLinkHover : #1c1c1c;
+$colorLight : #ffffff;
+$colorLabelForm: #757575;
+$colorVenca : #aa0061;
+$colorDisabled: #b2b2b2;
+
+
+// ===== VAR BACKGROUNDS ===== //
+$colorBgButton : #1c1c1c;
+$colorBgButtonHover : #dedede;
+$colorCartHeader : #dee2e6;
+
+
+// ====== VAR BORDERS ===== //
+$borderBottom: 1px solid #dee2e6;
+$borderBottomDark: 1px solid #808080;
+$borderDoubleModal : 6px double #808080;
+
+
+// ===== VAR TEXT ===== //
+$txtNotUnderlined: none;
+
+
+
+// ===== UTILS TEXT MIXINS ===== //
+@mixin FS($fontSize) {
+    font-size: $fontSize;
+}
+@mixin LH($lineHeight) {
+    line-height: $lineHeight;
+}
+
+
+// ===== SPACING MIXINS ===== //
+@mixin MTop($marginTop) {
+    margin-top: $marginTop;
+}
+@mixin Mx($marginTop, $marginBot) {
+    margin-top: $marginTop;
+    margin-bottom: $marginBot;
+}
+
+
+// ====== DIMENSIONS MIXINS ===== //
+@mixin vHeight($height) {
+    height: $height;
+}
+@mixin maxHeight($maxHeight) {
+    max-height: $maxHeight;
+}
+@mixin minWidth($minwidth) {
+    min-width: $minwidth;
+}
+
+
+
+// ===== ABSOLUTE POSITIONS MIXINS ===== //
+@mixin absTop($top) {
+    top: $top;
+}
+@mixin absRight($right) {
+    right: $right;
+}
+@mixin absBottom($bottom) {
+    bottom: $bottom;
+}
+@mixin absLeft($left) {
+    left: $left;
+}
+
+
+// ====== GENERIC MIXINS ===== //
+@mixin Cursor($cursor) {
+    cursor: $cursor;
+}
+@mixin hide($break) {
+    display: none;
+}
+
+
+
+// ====== CLASSES MIXINS ===== //
+@mixin navList() {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: -5px;
+    flex-grow: 1;
+}
+@mixin vcButton(){
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1.65rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $colorLight;
+    border: none;
+    border-radius: 0;;
+}
+@mixin vcCardHeaderBtn() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem 0.4rem 0.5rem 0;
+    margin-left: 0;
+    color: #212529;
+}
+
+
+
+// ===== FUNCTIONS ===== //

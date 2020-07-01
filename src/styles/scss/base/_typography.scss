@@ -1,0 +1,41 @@
+// ===== FONT-SIZES ===== //
+.FS-075 {
+    @include FS(.75rem)
+}
+.FS-1 {
+    @include FS(1rem);
+}
+.FS-11 {
+    @include FS(1.1rem);
+    @include phone {
+        font-size: 1rem;
+    }
+}
+.FS-125 {
+    @include FS(1.25rem);
+    @include phone {
+        font-size: 1.1rem;
+    }
+}
+.FS-15 {
+    @include FS(1.5rem);
+}
+.FS-20 {
+    @include FS(2rem);
+}
+
+@include tablet {
+    .FS-1, .FS-11, .FS-125 {
+        font-size: .9rem!important
+    }
+}
+
+  
+
+// ===== LINKS ===== //
+a {
+    color: $colorLink;
+    &:hover {
+        color: $colorLinkHover;
+    }
+}

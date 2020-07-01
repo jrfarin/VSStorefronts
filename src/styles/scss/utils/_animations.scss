@@ -1,0 +1,25 @@
+// ===== For Hearth Wishlist ===== //
+.pulse-animation {
+    animation: pulse-animation 1000ms cubic-bezier(0.390, 0.575, 0.565, 1.000) 300ms 3 both;
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes pulse-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

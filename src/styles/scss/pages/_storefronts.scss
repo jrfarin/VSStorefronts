@@ -1,0 +1,165 @@
+#vcStorefronts {
+    .storefront-title {
+        position: absolute;
+        top: 1%;
+        z-index: 1100;
+    }
+    .storefront-description {
+        position: absolute;
+        top: 35%;
+        margin-left: 22%;
+    }
+    .custom-control-label {
+        padding-top: 5px;
+    }
+    #storeSorting ul {
+        @include minWidth(7.25rem);
+        li {
+            padding: .35rem;
+            span {
+               outline: none;
+           }
+        }
+    }
+    .main-zone {
+        padding-top: .65rem;
+    }
+    .vc-panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    .fixedBtnsFilters {
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        margin-left: -4%;
+    }
+    .custom-control-input:checked~.custom-control-label::before {
+        border-color: pink;
+        background: #aa0061;;
+    }
+    #collapseSize input[type=checkbox],
+    #collapseColor input[type=checkbox]  {
+        -webkit-appearance: none;
+    }
+    #collapseSize label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        margin: 0.1925rem;
+    }
+    #collapseColor label {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 12.5%;
+         min-height: 42px;
+         padding: .25rem 0;
+         margin: 0.1925rem;
+    }
+    .vc-wrapper {
+        max-width: 860px;
+        .masonry {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+            grid-auto-rows: 0;
+            @include laptop {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));              
+            }
+            @include tablet {
+                grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+            }
+            @include phone {
+                grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+            }
+        }
+        .masonry-content {
+            font-size: 2vh;
+            overflow: hidden;
+        }
+        .masonry-brick {
+            color: #2f3640;
+            background-color: #fff;
+            transition: opacity .25s ease-in-out;
+            &:hover {
+                opacity: .75;
+            }
+            @include laptop {
+                padding: 0 5px;              
+            }
+        }
+        img {
+            max-width: 100%;
+            vertical-align: middle;  
+        }
+    }
+    .oneColumn img {
+        width: 100%;
+    }
+    .col-12 > .square-frame {
+        width: 330px;
+        height: auto;
+    }
+    .square-frame {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 255px;
+        height:255px;
+        @include laptop {
+            width: 210px;
+            height: 210px;
+        }
+        @include tablet {
+            width: 210px;
+            height: 210px;
+        }
+        @include phone {
+            width: 153px;
+            height: 153px;
+        }
+    }
+    .tab {
+        display: inline-block;
+        padding: 0 12px;
+        line-height: 30px;
+        margin: 0 5px 0 0;
+        color: #1a1a1a;
+        outline: none;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        transition: border-color .2s ease-out;
+        width: auto;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px
+    }   
+
+    @include phone {
+        .storefront-title {
+            position: static;
+            z-index: 0;
+            font-size: .9rem;
+            font-weight: bold;
+        }
+        .main-zone {
+            padding-top: 0;
+        }
+    }
+    @include tablet {
+        .storefront-title {
+            position: static;
+            z-index: 0;
+        }   
+    }
+}
+
+
