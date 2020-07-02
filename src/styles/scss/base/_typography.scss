@@ -18,7 +18,7 @@
     }
 }
 .FS-15 {
-    @include FS(1.5rem);
+    @include FS(1.5rem !important);
 }
 .FS-20 {
     @include FS(2rem);

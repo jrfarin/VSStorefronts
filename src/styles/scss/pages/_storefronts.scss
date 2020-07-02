@@ -29,12 +29,47 @@
         overflow: hidden;
         transition: max-height 0.2s ease-out;
     }
+    .accordion {
+        .vc-card-header {
+            background-color: #fff;
+            border-color: $colorCartHeader ;
+            padding: .35rem 0;
+            @include noPhone {
+                border-bottom: none;
+            } 
+            .btn-link {
+                span {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }          
+            }         
+        }
+    }
     .fixedBtnsFilters {
         position: fixed;
-        bottom: 0;
+        bottom: .25rem;
         background: #fff;
         width: 100%;
         margin-left: -4%;
+        padding: 0 .5rem;
+    }
+    .relatedStorefront a {
+        border-top: $borderBottom;
+        padding: .85rem 0 !important;
+        &:hover {
+            text-decoration: none;
+        }
+        @include noPhone {
+            border-top: none;
+            border-bottom: $borderBottom;  
+        }  
+        span {
+            @include noPhone {
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+        
     }
     .custom-control-input:checked~.custom-control-label::before {
         border-color: pink;
@@ -111,6 +146,7 @@
         overflow: hidden;
         width: 255px;
         height:255px;
+        padding: 0 .5rem;
         @include laptop {
             width: 210px;
             height: 210px;
@@ -122,6 +158,9 @@
         @include phone {
             width: 153px;
             height: 153px;
+        }
+        & + div {
+            padding: .5rem 0 1.5rem 1rem; 
         }
     }
     .tab {

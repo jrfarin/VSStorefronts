@@ -2,6 +2,7 @@ $break-vc-sm:  767px;
 $break-vc-md: 768px;
 $break-vc-lg: 1024px;
 $break-vc-xl: 1200px;
+$break-vc-xxl: 2600px;
 
 
 @mixin phone {
@@ -24,6 +25,12 @@ $break-vc-xl: 1200px;
 
 @mixin desktop {
     @media (min-width: #{$break-vc-xl + 1}) {
+        @content;
+    }
+}
+
+@mixin noPhone {
+    @media (min-width: #{$break-vc-sm + 1}) and (max-width: #{$break-vc-xxl}) {
         @content;
     }
 }
