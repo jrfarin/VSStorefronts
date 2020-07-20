@@ -1,5 +1,5 @@
 @import 'abstracts/_helpers';
-@import 'abstracts/breakpoints';
+@import 'abstracts/_breakpoints';
 
 @import 'base/_reset';
 @import 'base/_typography';
@@ -9,9 +9,10 @@
 @import 'components/_buttons';
 @import 'components/_accordions';
 @import 'components/_carouselAndModal';
+@import 'components/_forms.scss';
 
-@import 'pages/storefronts';
+@import 'pages/_storefronts';
 
-@import 'utils/animations';
+@import 'utils/_animations';
 
-@import 'vendors/swiper';
+@import 'vendors/_swiper';

@@ -1,0 +1,533 @@
+<section class="body-filters">
+    <!-- Venca Seller Only -->
+    {{!-- <div data-filter-name="sellers">                                      
+        <div class="custom-control pl-0">
+            <input type="checkbox" id="seller-VENCA" value="Venca">
+            <label for="seller-VENCA">Solo productos vendidos por VENCA</label>                  
+        </div>
+        <hr class="w-100 d-block d-md-none">
+    </div> --}}
+    <!-- Accordion -->
+    <div class="accordion mt-n2 mt-noPhone-4" id="accordionFiltersDK" data-filter-name="filters">
+        <!-- Product Type -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingProductTypeDK">                                          
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseProductTypeDK" aria-expanded="false" aria-controls="collapseProductTypeDK">
+                    <span>Tipo de Producto</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>									
+            </div>
+            <div id="collapseProductTypeDK" class="collapse" aria-labelledby="headingProductTypeDK" data-parent="#accordionFiltersDK">
+                <div class="card-body">
+                    <!-- Bañadores-->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="categoryBAÑADORES" value="BAÑADORES">
+                        <label for="categoryBAÑADORES">BAÑADORES</label>
+                    </div>                                    
+                    <!-- Bikinis -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-BIKINIS" value="BIKINIS">
+                        <label for="category-BIKINIS">BIKINIS</label>
+                    </div>
+                    <!-- Bragas Bikini -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-BRAGAS DE BIKINI" value="BRAGAS DE BIKINI">
+                        <label for="category-BRAGAS DE BIKINI">BRAGAS DE BIKINI</label>
+                    </div>
+                    <!-- Kimonos -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-KIMONOS" value="KIMONOS">
+                        <label for="category-KIMONOS">KIMONOS</label>
+                    </div>
+                    <!-- Sujetadores Bikini -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-SUJETADORES BIKINI" value="SUJETADORES BIKINI">
+                        <label for="category-SUJETADORES BIKINI">SUJETADORES BIKINI</label>
+                    </div>
+                    <!-- Tankinis -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-TANKINIS" value="TANKINIS">
+                        <label for="category-TANKINIS">TANKINIS</label>
+                    </div>  
+                    <!-- Trikinis -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-TRIKINIS" value="TRIKINIS">
+                        <label for="category-TRIKINIS">TRIKINIS</label>
+                    </div> 
+                    <!-- Vestidos -->
+                    <div class="custom-control pl-0">
+                        <input type="checkbox" id="category-VESTIDOS" value="VESTIDOS">
+                        <label for="category-VESTIDOS">VESTIDOS</label>
+                    </div>
+                    <!-- Borrrar filtro -->
+                    <div class="row d-flex justify-content-between align-items-center pb-3">
+                        <hr class="w-75">
+                        <span class="col-6">&nbsp;</span>
+                        <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                    </div>                                                 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingFeatures">                                          
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseFeatures" aria-expanded="false" aria-controls="collapseFeatures">
+                    <span>Característica</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>									
+            </div>
+            <div id="collapseFeatures" class="collapse" aria-labelledby="headingFeatures" data-parent="#accordionFiltersDK">
+                <div class="card-body">
+                    <!-- Accesorio -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-ACCESORIO" id="feature-ACCESORIO" data-normalized="accesorio" value="ACCESORIO">
+                        <label class="custom-control-label" for="feature-ACCESORIO" name="filterOption">ACCESORIO</label>
+                    </div>
+                    <!-- Baño -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-BAÑO" id="feature-BAÑO" data-normalized="bano" value="BAÑO">
+                        <label class="custom-control-label" for="feature-BAÑO" name="filterOption">BAÑO</label>
+                    </div>
+                    <!-- Básico -->    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-BÁSICO" id="feature-BÁSICO" data-normalized="basico" value="BÁSICO">
+                        <label class="custom-control-label" for="feature-BÁSICO" name="filterOption">BÁSICO</label>
+                    </div>
+                    <!-- Corsetería & Lencería -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-CORSETERIA/LENCERIA" id="feature-CORSETERIA/LENCERIA" data-normalized="corseteria-lenceria" value="CORSETERIA/LENCERIA">
+                        <label class="custom-control-label" for="feature-CORSETERIA/LENCERIA" name="filterOption">CORSETERIA/LENCERIA</label>
+                    </div>
+                    <!-- Corto -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-CORTO" id="feature-CORTO" data-normalized="corto" value="CORTO">
+                        <label class="custom-control-label" for="feature-CORTO" name="filterOption">CORTO</label>
+                    </div>
+                    <!-- Largo -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-CORTO" id="feature-CORTO" data-normalized="corto" value="CORTO">
+                        <label class="custom-control-label" for="feature-LARGO" name="filterOption">LARGO</label>
+                    </div>
+                    <!-- Lisa -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-LISA" id="feature-LISA" data-normalized="lisa" value="LISA">
+                        <label class="custom-control-label" for="feature-LISA" name="filterOption">LISA</label>
+                    </div>
+                    <!-- Manga corta -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-MANGA CORTA" id="feature-MANGA CORTA" data-normalized="manga-corta" value="MANGA CORTA">
+                        <label class="custom-control-label" for="feature-MANGA CORTA" name="filterOption">MANGA CORTA</label>
+                    </div>               
+                    <!-- Push Up -->               
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-PUSH-UP" id="feature-PUSH-UP" data-normalized="push-up" value="PUSH-UP">
+                        <label class="custom-control-label" for="feature-PUSH-UP" name="filterOption">PUSH-UP</label>
+                    </div>
+                    <!-- Short -->                 
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-SHORT" id="feature-SHORT" data-normalized="short" value="SHORT">
+                        <label class="custom-control-label" for="feature-SHORT" name="filterOption">SHORT</label>
+                    </div> 
+                    <!-- Tirantes -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-TIRANTES" id="feature-TIRANTES" data-normalized="tirantes" value="TIRANTES">
+                        <label class="custom-control-label" for="feature-TIRANTES" name="filterOption">TIRANTES</label>
+                    </div>
+                    <!-- Top -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-TOP" id="feature-TOP" data-normalized="top" value="TOP">
+                        <label class="custom-control-label" for="feature-TOP" name="filterOption">TOP</label>
+                    </div>
+                    <!-- Volante -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="feature-VOLANTE" id="feature-VOLANTE" data-normalized="volante" value="VOLANTE">
+                        <label class="custom-control-label" for="feature-VOLANTE" name="filterOption">VOLANTE</label>
+                    </div>
+
+                    <div class="row d-flex justify-content-between align-items-center pb-3">
+                        <hr class="w-75">
+                        <span class="col-6">&nbsp;</span>
+                        <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+        <!-- Size -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingSize">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+                    <span>Talla</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>
+            </div>                                        
+            <div id="collapseSize" class="collapse" aria-labelledby="headingSize" data-parent="#accordionFiltersDK">
+                <div class="card-body px-0">
+                    <div class="storeFrontsFilterSizes">
+                        <div data-toggle="buttons">
+                            <h6 >COMPLEMENTOS</h6>
+                            <div class="d-flex flex-wrap mb-2">
+                                <label class="border p-1">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_UNICA_BLANK" data-normalized="complementos_0_unica_blank">
+                                    <label>UNICA</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_1_BLANK" data-normalized="complementos_0_1_blank">
+                                    <label>1</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_1uds_BLANK" data-normalized="complementos_0_1uds_blank">
+                                    <label>1uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_1ud_BLANK" data-normalized="complementos_0_1ud_blank">
+                                    <label>1ud</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_2uds_BLANK" data-normalized="complementos_0_2uds_blank">
+                                    <label>2uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_9uds_BLANK" data-normalized="complementos_0_9uds_blank">
+                                    <label>9uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_5uds_BLANK" data-normalized="complementos_0_5uds_blank">
+                                    <label>5uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_10uds_BLANK" data-normalized="complementos_0_10uds_blank">
+                                    <label>10uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_12uds_BLANK" data-normalized="complementos_0_12uds_blank">
+                                    <label>12uds</label>
+                                </label>
+                                <label class="border p-2">
+                                    <input type="checkbox" value="COMPLEMENTOS_0_20uds_BLANK" data-normalized="complementos_0_20uds_blank">
+                                    <label>20uds</label>
+                                </label>
+                            </div>
+
+                            <h6 class="mb-1">PERFUMERIA</h6>
+                            <div class="d-flex flex-wrap mb-2">
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_8ml_BLANK" data-normalized="perfumeria_ml_8ml_blank">
+                                    <label>8ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_10ml_BLANK" data-normalized="perfumeria_ml_10ml_blank">
+                                    <label>10ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_12ml_BLANK" data-normalized="perfumeria_ml_12ml_blank">
+                                    <label>12ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_13ml_BLANK" data-normalized="perfumeria_ml_13ml_blank">
+                                    <label>13ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_15ml_BLANK" data-normalized="perfumeria_ml_15ml_blank">
+                                    <label>15ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_20ml_BLANK" data-normalized="perfumeria_ml_20ml_blank">
+                                    <label>20ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_25ml_BLANK" data-normalized="perfumeria_ml_25ml_blank">
+                                    <label>25ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_30ml_BLANK" data-normalized="perfumeria_ml_30ml_blank">
+                                    <label>30ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_35ml_BLANK" data-normalized="perfumeria_ml_35ml_blank">
+                                    <label>35ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_40ml_BLANK" data-normalized="perfumeria_ml_40ml_blank">
+                                    <label>40ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_45ml_BLANK" data-normalized="perfumeria_ml_45ml_blank">
+                                    <label>45ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_50ml_BLANK" data-normalized="perfumeria_ml_50ml_blank">
+                                    <label>50ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_60ml_BLANK" data-normalized="perfumeria_ml_60ml_blank">
+                                    <label>60ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_65ml_BLANK" data-normalized="perfumeria_ml_65ml_blank">
+                                    <label>65ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_72ml_BLANK" data-normalized="perfumeria_ml_72ml_blank">
+                                    <label>72ml</label>
+                                </label>
+                                <label class="border p-1">
+                                    <input type="checkbox" value="PERFUMERIA_ML_75ml_BLANK" data-normalized="perfumeria_ml_75ml_blank">
+                                    <label>75ml</label>
+                                </label>           
+                            </div>
+                        </div>
+                        <!-- Borrrar filtro -->
+                        <div class="row d-flex justify-content-between align-items-center pb-3">
+                            <hr class="w-75">
+                            <span class="col-6">&nbsp;</span>
+                            <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                        </div> 
+                    </div>                                                  
+                </div>
+            </div>
+        </div>
+        <!-- Color -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingColor">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                    <span>Color</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>
+            </div>
+            <div id="collapseColor" class="collapse" aria-labelledby="headingColor" data-parent="#accordionFiltersDK">
+                <div class="card-body px-0">
+                    <div class="storeFrontsFilterColors">
+                        <div data-toggle="buttons">
+                            <div class="d-flex flex-wrap">
+                                <label class="colorButton" name="filterOption" data-normalized="negro" data-color-name="NEGRO" style="background: #000000" title="NEGRO">
+                                    <input type="checkbox" value="NEGRO">                                                                    
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="marron" data-color-name="MARRÓN" style="background: #502C02" title="MARRÓN">
+                                    <input type="checkbox" value="MARRÓN">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="verde" data-color-name="VERDE" style="background: #18A44D" title="VERDE">
+                                    <input type="checkbox" value="VERDE">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="rojo" data-color-name="ROJO" style="background: #C4081D" title="ROJO">
+                                    <input type="checkbox" value="ROJO">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="lila" data-color-name="LILA" style="background: #8315C3" title="LILA">
+                                    <input type="checkbox" value="LILA">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="multicolor" data-color-name="MULTICOLOR" style="background: #C71585" title="MULTICOLOR">
+                                    <input type="checkbox" value="MULTICOLOR">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="dorado" data-color-name="DORADO" style="background: #EFB810" title="DORADO">
+                                    <input type="checkbox" value="DORADO">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="azul" data-color-name="AZUL" style="background: #1F52E3" title="AZUL">
+                                    <input type="checkbox" value="AZUL">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="naranja" data-color-name="NARANJA" style="background: #EE8018" title="NARANJA">
+                                    <input type="checkbox" value="NARANJA">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="beige" data-color-name="BEIGE" style="background: #C0B481" title="BEIGE">
+                                    <input type="checkbox" value="BEIGE">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="plateado" data-color-name="PLATEADO" style="background: #D2D2D2" title="PLATEADO">
+                                    <input type="checkbox" value="PLATEADO">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="gris" data-color-name="GRIS" style="background: #898585" title="GRIS">
+                                    <input type="checkbox" value="GRIS">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="amarillo" data-color-name="AMARILLO" style="background: #FDED3F" title="AMARILLO">
+                                    <input type="checkbox" value="AMARILLO">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="rosa" data-color-name="ROSA" style="background: #F663C1" title="ROSA">
+                                    <input type="checkbox" value="ROSA">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="crudo" data-color-name="CRUDO" style="background: #EDE9E0" title="CRUDO">
+                                    <input type="checkbox" value="CRUDO">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="transparente" data-color-name="TRANSPARENTE" style="background: #F0F8FF" title="TRANSPARENTE">
+                                    <input type="checkbox" value="TRANSPARENTE">
+                                </label>
+                                <label class="colorButton" name="filterOption" data-normalized="blanco" data-color-name="BLANCO" style="background: #FFFFFF" title="BLANCO">
+                                    <input type="checkbox" value="BLANCO">
+                                </label>
+                            </div>                                                                   
+                        </div>
+                    </div>
+
+                    <!-- Borrrar filtro -->
+                    <div class="row d-flex justify-content-between align-items-center pb-3">
+                        <hr class="w-75">
+                        <span class="col-6">&nbsp;</span>
+                        <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Price -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingPrice">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice">
+                    <span>Precio</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>
+            </div>                                               
+            <div id="collapsePrice" class="collapse" aria-labelledby="headingPrice" data-parent="#accordionFiltersDK">
+                <div class="card-body">
+                    
+
+                    <!-- Borrrar filtro -->
+                    <div class="row d-flex justify-content-between align-items-center pb-3">
+                        <hr class="w-75">
+                        <span class="col-6">&nbsp;</span>
+                        <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Brand -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingBrand">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseBrand" aria-expanded="false" aria-controls="collapseBrand">
+                    <span>Marca</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>
+            </div>
+            <div id="collapseBrand" class="collapse" aria-labelledby="headingBrand" data-parent="#accordionFiltersDK">
+                <div class="card-body px-0">
+                    <div data-ob-directive="Storefront.FilterIntoResultsDirective">
+                        <div class="form-group">
+                            <input autocomplete="off" class="filterInput form-control font-weight-lighter" id="input-2" spellcheck="false" type="text" placeholder="Buscar por marca" name="q" autofocus="true">
+                        </div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="4711" name="filterOption">
+                                    <input type="checkbox" name="4711" id="4711" data-normalized="4711" value="4711">
+                                    <i></i><span class="p-2">4711</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Acqua Di Parma" name="filterOption">
+                                    <input type="checkbox" name="Acqua Di Parma" id="Acqua Di Parma" data-normalized="acqua-di-parma" value="Acqua Di Parma">
+                                    <i></i><span class="p-2">Acqua Di Parma</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="adidas" name="filterOption">
+                                    <input type="checkbox" name="adidas" id="adidas" data-normalized="adidas" value="adidas">
+                                    <i></i><span class="p-2">adidas</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ADLER" name="filterOption">
+                                    <input type="checkbox" name="ADLER" id="ADLER" data-normalized="adler" value="ADLER">
+                                    <i></i><span class="p-2">ADLER</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Adolfo Domínguez" name="filterOption">
+                                    <input type="checkbox" name="Adolfo Domínguez" id="Adolfo Domínguez" data-normalized="adolfo-dominguez" value="Adolfo Domínguez">
+                                    <i></i><span class="p-2">Adolfo Domínguez</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="AEG" name="filterOption">
+                                    <input type="checkbox" name="AEG" id="AEG" data-normalized="aeg" value="AEG">
+                                    <i></i><span class="p-2">AEG</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Agua de Sevilla" name="filterOption">
+                                    <input type="checkbox" name="Agua de Sevilla" id="Agua de Sevilla" data-normalized="agua-de-sevilla" value="Agua de Sevilla">
+                                    <i></i><span class="p-2">Agua de Sevilla</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Agua Lavanda Puig" name="filterOption">
+                                    <input type="checkbox" name="Agua Lavanda Puig" id="Agua Lavanda Puig" data-normalized="agua-lavanda-puig" value="Agua Lavanda Puig">
+                                    <i></i><span class="p-2">Agua Lavanda Puig</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Aigner" name="filterOption">
+                                    <input type="checkbox" name="Aigner" id="Aigner" data-normalized="aigner" value="Aigner">
+                                    <i></i><span class="p-2">Aigner</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Aire de Sevilla" name="filterOption">
+                                    <input type="checkbox" name="Aire de Sevilla" id="Aire de Sevilla" data-normalized="aire-de-sevilla" value="Aire de Sevilla">
+                                    <i></i><span class="p-2">Aire de Sevilla</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Alexandre Cosmetics" name="filterOption">
+                                    <input type="checkbox" name="Alexandre Cosmetics" id="Alexandre Cosmetics" data-normalized="alexandre-cosmetics" value="Alexandre Cosmetics">
+                                    <i></i><span class="p-2">Alexandre Cosmetics</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Álvarez Gómez" name="filterOption">
+                                    <input type="checkbox" name="Álvarez Gómez" id="Álvarez Gómez" data-normalized="alvarez-gomez" value="Álvarez Gómez">
+                                    <i></i><span class="p-2">Álvarez Gómez</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Alyssa Ashley" name="filterOption">
+                                    <input type="checkbox" name="Alyssa Ashley" id="Alyssa Ashley" data-normalized="alyssa-ashley" value="Alyssa Ashley">
+                                    <i></i><span class="p-2">Alyssa Ashley</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Angel Schlesser" name="filterOption">
+                                    <input type="checkbox" name="Angel Schlesser" id="Angel Schlesser" data-normalized="angel-schlesser" value="Angel Schlesser">
+                                    <i></i><span class="p-2">Angel Schlesser</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Anian" name="filterOption">
+                                    <input type="checkbox" name="Anian" id="Anian" data-normalized="anian" value="Anian">
+                                    <i></i><span class="p-2">Anian</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Anne Möller" name="filterOption">
+                                    <input type="checkbox" name="Anne Möller" id="Anne Möller" data-normalized="anne-moller" value="Anne Möller">
+                                    <i></i><span class="p-2">Anne Möller</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Borrrar filtro -->
+                    <div class="row d-flex justify-content-between align-items-center pb-3">
+                        <hr class="w-75">
+                        <span class="col-6">&nbsp;</span>
+                        <span class="col-6 text-right" data-function="clear">Borrar filtro</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Sort -->
+        <div class="vc-card">
+            <div class="vc-card-header" id="headingSort">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseSort" aria-expanded="false" aria-controls="collapseSort">
+                    <span>Ordenar</span>
+                    <i class="vc-color fas fa-plus"></i>
+                </button>
+            </div>
+            
+            <div id="collapseSort" class="collapse" aria-labelledby="headingSort" data-parent="#accordionFiltersDK">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters Buttons -->  
+    <div class="d-flex justify-content-between align-items-center fixedBtnsFilters d-block d-md-none">
+        <span class="font-weight-light text-uppercase btn btn-dark rounded-0 shadow-none px-4 py-2" data-function="clearAll">Borrar filtros</span>
+        <span class="font-weight-light text-uppercase btn btn-dark rounded-0 shadow-none px-4 py-2" data-function="apply">Aplicar filtros</span>
+    </div>
+</section>

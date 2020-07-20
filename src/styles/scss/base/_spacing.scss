@@ -42,3 +42,9 @@
         padding-right: 0 !important;
     }
 }
+
+@include noPhone {
+    .mt-noPhone-4 {
+        margin-top: 1.5rem !important;
+    }
+}

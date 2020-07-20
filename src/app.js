@@ -16,3 +16,8 @@ import './static/img/vc-09.jpg';
 import './static/img/vc-10.jpg';
 import './static/img/vc-11.jpg';
 import './static/img/vc-12.jpg';
+
+import './static/img/checkbox-check.svg';
+import './static/img/checkbox-uncheck.svg';
+import './static/img/radio-check.svg';
+import './static/img/radio-uncheck.svg';
