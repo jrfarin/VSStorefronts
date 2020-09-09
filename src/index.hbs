@@ -10,7 +10,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Swipe CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/css/swiper.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../dist/css/main.min.css">  
 </head>
@@ -22,7 +22,7 @@
             <!-- Title or Lookbook -->
             <section id="headerTitle" class="row d-none d-lg-block">
                 <div class="col-12 d-flex justify-content-center">
-                    <h1 class="storefront-title FS-20 text-center text-uppercase font-weight-lighter">Belleza y Cosmética</h1>                
+                    <h1 class="storefront-title FS-20 text-center text-uppercase font-weight-lighter">Belleza y Cosmética</h1> 
                 </div>
                 <div class=" col-md-12">
                     <img src="./static/img//banner.jpg" class="img-fluid" >
@@ -32,60 +32,58 @@
                 </div>
             </section>
 
+            <!-- Commercial Title & Filter CTA -->
+            <section id="cTitleFilterCall" class="row d-flex d-lg-none pb-1 m-2">
+                <div class="newCommercialTitle FS10">
+                    <h1 class="FS-1 font-weight-bold text-secondary">Vestidos de mujer</h1>
+                </div>
+                <div class="newFilterIcon ml-auto" data-toggle="modal" data-target="#filtersId">
+                    <div class="d-flex">
+                        <img src="./static/img/filters.svg" alt="Filtros de búsqueda" width="14">
+                        <span class="pl-1">Filtros <strong class="vc-color countFilter outmodal">(1)</strong></span>
+                    </div>
+                    <!-- Modal Filters -->
+                    <div class="modal fade" id="filtersId" tabindex="-1" role="dialog" aria-labelledby="filtersModalLabel" aria-hidden="true">
+                        <div class="modal-dialog m-0" role="document">
+                            <div class="modal-content FS-20vh vc-vw-height-100">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase" id="exampleModalLabel">Filtrar</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                    </button>
+                                </div>                         
+                                <div class="modal-body bg-white">
+                                    ¨{{> partials/_Filters }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section> 
+           
+            <!-- Swiper Categories -->
+            <section id="categories" class="row mt-2">
+                <div class="col-12">
+                    <div class="swiper-container swpCategory">
+                        <div class="swiper-wrapper font-weight-bold">
+                            <a href="/" class="tab swiper-slide">Maquillaje</a>
+                            <a href="/" class="tab swiper-slide">Fragancias</a>
+                            <a href="/" class="tab swiper-slide">Cuidado facial</a>
+                            <a href="/" class="tab swiper-slide">Cuidado del cabello</a>
+                            <a href="/" class="tab swiper-slide">Hidratantes</a>
+                            <a href="/" class="tab swiper-slide">Ojos y labios</a>
+                            <a href="/" class="tab swiper-slide">Exfoliantes</a>
+                            <a href="/" class="tab swiper-slide">Salud y bienestar</a>
+                            <a href="/" class="tab swiper-slide">Mascarillas</a>
+                            <a href="/" class="tab swiper-slide">Coloración</a>
+                            <a href="/" class="tab swiper-slide">Reafirmantes</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Main  Zone -->
             <section id="products">
-                <!-- Categories & Filters Mobile -->
-                <div id="categoriesAndFiltersMB" class="d-block d-md-none">
-                    <section class="row mt-2">
-                        <!-- Categorías -->                    
-                        <div class="col-6 pl-3 pr-1">
-                            <a id="filterCategories" class="d-flex align-items-center justify-content-between vc-height-36 border px-2 py-1" type="button" data-toggle="modal" data-target="#categoriesId">
-                                <span class="text-uppercase">Categorías</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <!-- Modal Categories -->
-                            <div class="modal fade" id="categoriesId" tabindex="-1" role="dialog" aria-labelledby="categoriesModalLabel" aria-hidden="true">
-                                <div class="modal-dialog m-0" role="document">
-                                    <div class="modal-content vc-vw-height-100">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Categorías</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                            </button>
-                                        </div>                         
-                                        <div class="modal-body FS-15">
-                                            {{> partials/_Categories }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>           
-                        </div>
-                        <!-- Filtros -->
-                        <div class="col-6 pl-1 pr-3">
-                            <a id="filterFeatures" class="d-flex align-items-center justify-content-between vc-height-36 border px-2 py-1"  type="button" data-toggle="modal" data-target="#filtersId">         
-                                <span class="text-uppercase">Filtros</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <!-- Modal Filters -->
-                            <div class="modal fade" id="filtersId" tabindex="-1" role="dialog" aria-labelledby="filtersModalLabel" aria-hidden="true">
-                                <div class="modal-dialog m-0" role="document">
-                                    <div class="modal-content FS-20vh vc-vw-height-100">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Filtrar</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                            </button>
-                                        </div>                         
-                                        <div class="modal-body bg-white">
-                                            ¨{{> partials/_Filters }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </section>
-                </div>
-                
                 <div id="mainDesktop" class="row">            
                     <!-- Categories & Filters Desktop -->
                     <section id="categoriesAndFiltersDK" class="col-md-4 col-lg-3 mt-3 d-none d-md-block">
@@ -108,7 +106,8 @@
                                         <div class="vc-card-header" id="headingCategoriesDK">                                          
                                             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseCategoriesDK" aria-expanded="true" aria-controls="collapseCategoriesDK">
                                                 <span class="FS-15">Categorías</span>
-                                                <i class="vc-color fas fa-minus"></i>
+                                                {{!-- <i class="vc-color fas fa-minus"></i> --}}
+                                                <span class="fas fa-minus-svg"></span>
                                             </button>									
                                         </div>
                                         <div id="collapseCategoriesDK" class="collapse show" aria-labelledby="headingCategoriesDK" data-parent="#accordionCategoriesDK">
@@ -423,11 +422,21 @@
     </div>
                         
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swpCategory', {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            freeMode: true,
+        });
+    </script>
 
 </body>
 </html>

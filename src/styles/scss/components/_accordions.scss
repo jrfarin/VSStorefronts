@@ -18,3 +18,15 @@
         }         
     }
 }
+span.fa-plus-svg,
+span.fa-minus-svg {
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+}
+span.fa-plus-svg {
+    background-image: url("/static/img/plus.svg");
+}
+span.fa-minus-svg {
+    background-image: url("/static/img/minus.svg");
+}

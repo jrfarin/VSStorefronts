@@ -27,22 +27,22 @@
     btnWish.forEach(function(item) {
         item.addEventListener('click', function(e){
             e.preventDefault();
-            this.classList.toggle('pulse-animation')
+            this.classList.toggle('pulse-animation');
         } , {
             once: true,
-        })
-    })
+        });
+    });
 
     // Accordion Icons Plus/Minus 
     $(function(){
         $(".collapse.show").each(function(){
-            $(this).prev(".vc-card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            $(this).prev(".vc-card-header").find(".fas").addClass("fa-minus-svg").removeClass("fa-plus-svg");
         });     
         $(".collapse").on('show.bs.collapse', function(){
-            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-plus").addClass("fa-minus");
+            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-plus-svg").addClass("fa-minus-svg");
         }).on('hide.bs.collapse', function(){
-            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-minus").addClass("fa-plus");
+            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-minus-svg").addClass("fa-plus-svg");
         });
-    })
+    });
 
 }());
