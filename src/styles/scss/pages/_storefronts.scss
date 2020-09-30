@@ -176,6 +176,9 @@
         width: auto;
         text-align: center;
         border-radius: 4px
+    }
+    #moreFiltersDrop .dropdown-toggle::after {
+        border: none;
     }   
 
     @include phone {

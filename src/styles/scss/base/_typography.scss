@@ -1,6 +1,18 @@
 // ===== FONT-SIZES ===== //
+.FS-0675 {
+    @include FS(.675rem);
+}
 .FS-075 {
-    @include FS(.75rem)
+    @include FS(.75rem !important);
+}
+.FS-08 {
+    @include FS(.8rem !important);
+}
+.FS-085 {
+    @include FS(.85rem !important);
+}
+.FS-09 {
+    @include FS(.9rem !important);
 }
 .FS-1 {
     @include FS(1rem);
@@ -17,20 +29,52 @@
         font-size: 1.1rem;
     }
 }
+.FS-14 {
+    @include FS(1.4rem !important);
+}
 .FS-15 {
     @include FS(1.5rem !important);
+}
+.FS-175 {
+    @include FS(1.75rem);
+    @include phone {
+        font-size: 1.35rem;
+    }
 }
 .FS-20 {
     @include FS(2rem);
 }
-
-@include tablet {
-    .FS-1, .FS-11, .FS-125 {
-        font-size: .9rem!important
+.FS-20SQ {
+    @include FS(2rem);
+    @include phone {
+        font-size: .8rem;
+    }
+}
+.FS-14SQ {
+    @include FS(1.4rem);
+    @include phone {
+        font-size: .9rem;
     }
 }
 
-  
+@include tablet {
+    .FS-1, .FS-11, .FS-125 {
+        font-size: .9rem !important
+    }
+}
+
+// ===== LINE HEIGHTS ===== //
+.LH-135 {
+    @include LH(1.35);
+}
+.LH-15 {
+    @include LH(1.5);
+}
+
+// ===== LETTER SPACINGS ===== //
+.LSP-05 {
+    @include LSP(-.5px);
+}
 
 // ===== LINKS ===== //
 a {

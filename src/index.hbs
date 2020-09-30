@@ -85,8 +85,8 @@
             <!-- Main  Zone -->
             <section id="products">
                 <div id="mainDesktop" class="row">            
-                    <!-- Categories & Filters Desktop -->
-                    <section id="categoriesAndFiltersDK" class="col-md-4 col-lg-3 mt-3 d-none d-md-block">
+                    <!-- Filters Desktop -->
+                    {{!-- <section id="categoriesAndFiltersDK" class="col-md-4 col-lg-3 mt-3 d-none d-md-block">
                         <div class="row">
                             <div class="col-12 mt-2">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -96,34 +96,17 @@
                                     </span>
                                 </div>
                                 <hr class="w-100 mt-3">
-
-                                <!-- Accordion Filtros -->
+                                
                                 {{> partials/_Filters }}
-
-                                <!-- Accordion Categories -->
-                                <div class="accordion mt-5" id="accordionCategoriesDK" data-filter-name="categories">
-                                    <div class="vc-card">
-                                        <div class="vc-card-header" id="headingCategoriesDK">                                          
-                                            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseCategoriesDK" aria-expanded="true" aria-controls="collapseCategoriesDK">
-                                                <span class="FS-15">Categorías</span>
-                                                {{!-- <i class="vc-color fas fa-minus"></i> --}}
-                                                <span class="fas fa-minus-svg"></span>
-                                            </button>									
-                                        </div>
-                                        <div id="collapseCategoriesDK" class="collapse show" aria-labelledby="headingCategoriesDK" data-parent="#accordionCategoriesDK">
-                                            <div class="card-body p-0">
-                                                {{> partials/_Categories }}
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
-                    </section>                
+                    </section>                 --}}
 
                     <!-- Main Storefront -->
-                    <section class="col-12 col-md-8 col-lg-9 main-zone">
+                    <section class="col-12 main-zone">
+                        
+                        <!-- Zone A -->
                         <div class="d-flex justify-content-between align-items-center">
                             <!-- Breadcrumbs -->             
                             <nav id="breadcrumbs" aria-label="breadcrumb">
@@ -134,10 +117,17 @@
                                     <li class="breadcrumb-item active d-none d-lg-block" aria-current="page">Bikini 2 piezas sujetador y braga estampado</li>
                                 </ol>
                             </nav>
+                            <!-- Only Venca -->
+                            <div class="d-none d-lg-block pt-2 ml-auto" data-filter-name="sellers">                                      
+                                <div class="custom-control pl-0">
+                                    <input type="checkbox" id="seller-VENCA" value="Venca">
+                                    <label for="seller-VENCA">Solo productos vendidos por VENCA</label>                  
+                                </div>
+                            </div>
                             <!-- Sorting -->
-                            <div id="storeSorting" class="dropdown  d-none d-lg-block">
+                            <div id="storeSorting" class="dropdown d-none d-lg-block pl-5">
                                 <span class="pr-1">Ordenar por</span>
-                                <button id="dropdownSort" class="dropdown-toggle bg-white border border-light px-3 py-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button id="dropdownSort" class="dropdown-toggle bg-white border px-3 py-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span id="selectedSort" class="font-weight-light" data-sort="relevance">Relevancia</span>
                                 </button>
                                 <ul class="dropdown-menu ">
@@ -153,11 +143,108 @@
                                 <i id="productTwo" class="fas fa-pause fa-2x pl-1"></i>
                             </div>
                         </div>
+
+                        <!-- Dropdown Filters -->
+                        <section class="row mb-2 d-none d-md-block">
+                            <div class="col-12">
+                                <div class="btn-group">
+                                    <div id="productTypeDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle pl-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de producto</button>
+                                        <div class="dropdown-menu pt-3">
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="categoryBAÑADORES" value="BAÑADORES">
+                                                <label for="categoryBAÑADORES">BAÑADORES</label>
+                                            </div>                                    
+                                            <!-- Bikinis -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-BIKINIS" value="BIKINIS">
+                                                <label for="category-BIKINIS">BIKINIS</label>
+                                            </div>
+                                            <!-- Bragas Bikini -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-BRAGAS DE BIKINI" value="BRAGAS DE BIKINI">
+                                                <label for="category-BRAGAS DE BIKINI">BRAGAS DE BIKINI</label>
+                                            </div>
+                                            <!-- Kimonos -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-KIMONOS" value="KIMONOS">
+                                                <label for="category-KIMONOS">KIMONOS</label>
+                                            </div>
+                                            <!-- Sujetadores Bikini -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-SUJETADORES BIKINI" value="SUJETADORES BIKINI">
+                                                <label for="category-SUJETADORES BIKINI">SUJETADORES BIKINI</label>
+                                            </div>
+                                            <!-- Tankinis -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-TANKINIS" value="TANKINIS">
+                                                <label for="category-TANKINIS">TANKINIS</label>
+                                            </div>  
+                                            <!-- Trikinis -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-TRIKINIS" value="TRIKINIS">
+                                                <label for="category-TRIKINIS">TRIKINIS</label>
+                                            </div> 
+                                            <!-- Vestidos -->
+                                            <div class="custom-control pl-2">
+                                                <input type="checkbox" id="category-VESTIDOS" value="VESTIDOS">
+                                                <label for="category-VESTIDOS">VESTIDOS</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="featureDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Característica</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div id="SizeDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Talla</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div id="PriceDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Precio</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </div>
+                                    </div>
+                                    <div id="ColorDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </div>
+                                    </div>
+                                    <div id="BrandDrop">
+                                        <button type="button" class="btn LSP-05 font-weight-bold text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marca</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </div>
+                                    </div>
+                                    <div id="moreFiltersDrop">
+                                        <button type="button" class="btn LSP-05 border rounded-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="FS-075 fas fa-plus"></i>
+                                            <span class="font-weight-normal pl-1">Filtros</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>                      
+                                </div>   
+                            </div>
+                        </section>
                         
-                       <!-- Grid -->
+                        <!-- Grid -->
                         <section class="row vc-grid">
                             <!-- Product 1 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-01.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -178,7 +265,7 @@
                             </div>
 
                             <!-- Product 2 -->            
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-02.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -199,7 +286,7 @@
                             </div>
 
                             <!-- Product 3 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-03.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -220,7 +307,7 @@
                             </div>
 
                             <!-- Product 4 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-04.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -241,7 +328,7 @@
                             </div>
 
                             <!-- Product 5 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-05.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -262,7 +349,7 @@
                             </div>
 
                             <!-- Product 6 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-06.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -283,7 +370,7 @@
                             </div>
 
                             <!-- Product 7 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-07.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -304,7 +391,7 @@
                             </div>
 
                             <!-- Product 8 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-08.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -325,7 +412,7 @@
                             </div>
 
                             <!-- Product 9 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-09.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -346,7 +433,7 @@
                             </div>
 
                             <!-- Product 10 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-10.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -367,7 +454,7 @@
                             </div>
 
                             <!-- Product 11 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-11.jpg" class="img-fluid" alt=""> 
                                 </div>
@@ -388,7 +475,7 @@
                             </div>
 
                             <!-- Product 12 -->
-                            <div class="col-6 col-md-6 col-lg-4">
+                            <div class="col-6 col-md-6 col-lg-3">
                                 <div class="square-frame">
                                     <img src="./static/img/vc-12.jpg" class="img-fluid" alt=""> 
                                 </div>
